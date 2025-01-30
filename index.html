@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <title>Create Server - KenzDev</title>
+    <link rel="stylesheet" href="kenz.css">
+</head>
+<body>
+  <div id="particles-js"></div>
+    <div class="container">
+        <div class="header">
+            <img src="/ptero.jpg" alt="Pterodactyl" class="pterodactyl-img">
+            <h1>Create Server</h1>
+        </div>
+
+        <form id="serverForm">
+          <div class="input2">
+            <label for="serverName">Name Server:</label>
+            <input type="text" id="serverName" name="serverName" placeholder="Nama Server" required>
+
+            <label for="serverKey">Key Server:</label>
+            <input type="text" id="serverKey" name="serverKey" placeholder="Key Server" required>
+           </div>
+
+            <label for="ram">Pilih RAM:</label>
+            <select id="ram" name="ram" required>
+                <option value="1">1 GB</option>
+                <option value="2">2 GB</option>
+                <option value="3">3 GB</option>
+                <option value="4">4 GB</option>
+                <option value="5">5 GB</option>
+                <option value="6">6 GB</option>
+                <option value="7">7 GB</option>
+                <option value="8">8 GB</option>
+                <option value="9">9 GB</option>
+                <option value="10">10 GB</option>
+            </select>
+
+            <label for="cpu">Pilih CPU:</label>
+            <input placeholder="30 CPU" type="text" id="cpu" name="cpu" disabled required > <!-- CPU tidak bisa dipilih -->
+
+            <!-- Menampilkan harga RAM -->
+            <div id="priceDisplay" class="result">Harga: Rp. 2000</div>
+
+            <button type="submit" id="submitBtn">Buat Server</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
